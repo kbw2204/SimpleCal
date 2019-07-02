@@ -54,14 +54,46 @@
 		CC9F4E5322CB5D9900BD0119 /* SimpleCal */ = {
 			isa = PBXGroup;
 			children = (
-				CC9F4E5422CB5D9900BD0119 /* AppDelegate.swift */,
-				CC9F4E5622CB5D9900BD0119 /* ViewController.swift */,
-				CC9F4E5822CB5D9900BD0119 /* Main.storyboard */,
-				CC9F4E5B22CB5D9A00BD0119 /* Assets.xcassets */,
+				CC9F4E6922CB5F3700BD0119 /* View */,
+				CC9F4E6822CB5F2400BD0119 /* Controller */,
+				CC9F4E6722CB5F0A00BD0119 /* Supporting Files */,
+				CC9F4E6622CB5EF000BD0119 /* Model */,
+			);
+			path = SimpleCal;
+			sourceTree = "<group>";
+		};
+		CC9F4E6622CB5EF000BD0119 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC9F4E6722CB5F0A00BD0119 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				CC9F4E5D22CB5D9A00BD0119 /* LaunchScreen.storyboard */,
 				CC9F4E6022CB5D9A00BD0119 /* Info.plist */,
 			);
-			path = SimpleCal;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC9F4E6822CB5F2400BD0119 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F4E5422CB5D9900BD0119 /* AppDelegate.swift */,
+				CC9F4E5622CB5D9900BD0119 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC9F4E6922CB5F3700BD0119 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F4E5822CB5D9900BD0119 /* Main.storyboard */,
+				CC9F4E5B22CB5D9A00BD0119 /* Assets.xcassets */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5K2X34XNP;
-				INFOPLIST_FILE = SimpleCal/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleCal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5K2X34XNP;
-				INFOPLIST_FILE = SimpleCal/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleCal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
