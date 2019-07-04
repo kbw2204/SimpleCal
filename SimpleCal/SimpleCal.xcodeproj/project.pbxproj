@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62BBE1604E818913DC86A793 /* Pods_SimpleCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF28FECE981D9967DFE9799 /* Pods_SimpleCal.framework */; };
+		CC6CD38A22CDEECA00014260 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CD38922CDEECA00014260 /* DateCell.swift */; };
 		CC9F4E5522CB5D9900BD0119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F4E5422CB5D9900BD0119 /* AppDelegate.swift */; };
 		CC9F4E5722CB5D9900BD0119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F4E5622CB5D9900BD0119 /* ViewController.swift */; };
 		CC9F4E5A22CB5D9900BD0119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9F4E5822CB5D9900BD0119 /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E7C653C4C8B8953958FCDFE /* Pods-SimpleCal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCal.release.xcconfig"; path = "Target Support Files/Pods-SimpleCal/Pods-SimpleCal.release.xcconfig"; sourceTree = "<group>"; };
+		61F79EE5C00AEC9FF7C52BFD /* Pods-SimpleCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCal.debug.xcconfig"; path = "Target Support Files/Pods-SimpleCal/Pods-SimpleCal.debug.xcconfig"; sourceTree = "<group>"; };
+		6EF28FECE981D9967DFE9799 /* Pods_SimpleCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6CD38922CDEECA00014260 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		CC9F4E5122CB5D9900BD0119 /* SimpleCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9F4E5422CB5D9900BD0119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC9F4E5622CB5D9900BD0119 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BBE1604E818913DC86A793 /* Pods_SimpleCal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		757E004FD0E844CEBB8E4EA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EF28FECE981D9967DFE9799 /* Pods_SimpleCal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0027058E6EC30F13CF23BF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61F79EE5C00AEC9FF7C52BFD /* Pods-SimpleCal.debug.xcconfig */,
+				3E7C653C4C8B8953958FCDFE /* Pods-SimpleCal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC9F4E4822CB5D9900BD0119 = {
 			isa = PBXGroup;
 			children = (
 				CC9F4E5322CB5D9900BD0119 /* SimpleCal */,
 				CC9F4E5222CB5D9900BD0119 /* Products */,
+				B0027058E6EC30F13CF23BF3 /* Pods */,
+				757E004FD0E844CEBB8E4EA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +91,7 @@
 		CC9F4E6622CB5EF000BD0119 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC6CD38922CDEECA00014260 /* DateCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC9F4E6322CB5D9A00BD0119 /* Build configuration list for PBXNativeTarget "SimpleCal" */;
 			buildPhases = (
+				03785A6D61A1175665F9F133 /* [CP] Check Pods Manifest.lock */,
 				CC9F4E4D22CB5D9900BD0119 /* Sources */,
 				CC9F4E4E22CB5D9900BD0119 /* Frameworks */,
 				CC9F4E4F22CB5D9900BD0119 /* Resources */,
+				345748E407AE19B689262860 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,12 +191,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03785A6D61A1175665F9F133 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleCal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		345748E407AE19B689262860 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleCal/Pods-SimpleCal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleCal/Pods-SimpleCal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC9F4E4D22CB5D9900BD0119 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CC9F4E5722CB5D9900BD0119 /* ViewController.swift in Sources */,
+				CC6CD38A22CDEECA00014260 /* DateCell.swift in Sources */,
 				CC9F4E5522CB5D9900BD0119 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +389,7 @@
 		};
 		CC9F4E6422CB5D9A00BD0119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F79EE5C00AEC9FF7C52BFD /* Pods-SimpleCal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +408,7 @@
 		};
 		CC9F4E6522CB5D9A00BD0119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E7C653C4C8B8953958FCDFE /* Pods-SimpleCal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
