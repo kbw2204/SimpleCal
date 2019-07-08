@@ -8,10 +8,8 @@
 
 import UIKit
 import JTAppleCalendar
-import CoreData
 
 class MainVC: UIViewController {
-    
 
     
     override func viewDidLoad() {
@@ -19,8 +17,10 @@ class MainVC: UIViewController {
         // Do any additional setup after loading the view.
         
     }
-
-
+    @IBAction func back_Action(_ segue: UIStoryboardSegue) {
+        
+    }
+    
 }
 
 extension MainVC: JTAppleCalendarViewDataSource {
